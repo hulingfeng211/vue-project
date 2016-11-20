@@ -12,7 +12,9 @@
             </el-col>
         </el-row>
          </div>
-        <footer2></footer2>
+         <!--
+        <footer2></footer2> -->
+        
 
 
     </div>
@@ -22,6 +24,7 @@
 import SideBar from './components/SideBar'
 import Footer2 from './components/Footer2'
 import NavBar from './components/NavBar'
+import Markdown from './components/Markdown'
 
 export default {
   data () {
@@ -37,7 +40,7 @@ export default {
   },
    components:{
 
-            SideBar,Footer2,NavBar
+            SideBar,Footer2,NavBar,Markdown
         }
 }
 

@@ -1,8 +1,8 @@
 <template>
     <div id="footer">
-        <el-row :type="flex" :align="bottom">
+        <el-row >
             <el-col :span="24">
-                <h3 style="align:center;">{{copyright}}</h3>
+                <h4 style="align:center;">{{copyright}}</h4>
             </el-col>
         </el-row>
     </div>
@@ -21,7 +21,7 @@
         name:"Footer2",
         data(){
             return{
-                copyright:"2016-SWS"
+                copyright:"2016-China SWS"
             }
         },
         components:{
