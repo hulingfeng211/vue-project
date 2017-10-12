@@ -2,6 +2,7 @@
 from tornado.ioloop import IOLoop
 from tornado.web import Application,StaticFileHandler, RequestHandler,escape
 import os
+from tornado.log import gen_log
 import api
 
 class App(RequestHandler):
@@ -63,5 +64,5 @@ if __name__ == '__main__':
                     static_url_prefix="/dist/",
                     template_path=os.path.join(os.path.dirname(__file__),'src'))
     app.listen(11108)
-    print 'server at localhost:11108'
+    gen_log.info('server at localhost:11108')
     IOLoop.current().start()
